@@ -13,22 +13,22 @@
       name: "Demo User",
       meetingId: url.get("meetingId"),
       apiKey: "9663eca8-dcf2-4916-ba0a-377a8483aeb4",
-
-      containerId: null,
-
+      
       micEnabled: true,
       webcamEnabled: true,
       participantCanToggleSelfWebcam: true,
       participantCanToggleSelfMic: true,
-
       chatEnabled: true,
       screenShareEnabled: true,
+      pollEnabled: true,
+      whiteboardEnabled: true,
+      raiseHandEnabled: true,
 
-      /*
-
-     Other Feature Properties
-      
-      */
+      joinScreen: {
+            visible: true, // Show the join screen ?
+            title: "Daily scrum", // Meeting title
+            meetingUrl: window.location.href, // Meeting joining url
+          },
     };
 
     const meeting = new VideoSDKMeeting();
